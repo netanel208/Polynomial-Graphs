@@ -13,6 +13,7 @@ import myMath.Monom;
  * 3. Derivative
  * 
  * @author Netanel
+ * @author Carmel
  *
  */
 public class Polynom implements Polynom_able{
@@ -32,16 +33,7 @@ public class Polynom implements Polynom_able{
 	 * Divides the string into segments by "split",
 	 * each cell in the structure contains a string that is converted to a Monom.
 	 * 
-	 * First, before the constructor converts the string in the cell
-	 *  in which it is currently located, 
-	 *  it sends the string to the IsItTrueExpression(String str) function
-	 *  to check whether the string can be converted to Monom.
-	 *  If the string is invalid -
-	 *  turn the function Error() which returns an error message.
-	 *  Each Monom insertion after a conversion
-	 *  is performed by the class's add(Monom m) function.
-	 * Finally, if all is normal,
-	 *  sorting and ordering of the data structure is carried out by the Comperator variable.
+	 * Each element sent to Monom class to convert string to Monom by Monom constructor Monom(String)
 	 *  @param polynom      the string that the function need to convert to Polynom
 	 */
 
@@ -458,7 +450,10 @@ public class Polynom implements Polynom_able{
 		}
 	}
 
-
+	/**
+	 * 
+	 * @return String 
+	 */
 	public String toString()
 	{
 		//"f(x) =";
@@ -476,6 +471,12 @@ public class Polynom implements Polynom_able{
 		}
 		return ans;
 	}
+	/**
+	 * This function returns a graph in which the polynomial is represented in a particular field [x0,x1],
+	 * extreme points, and the area above the function and under the X axis between [x0,x1]. 
+	 * @param x0  start
+	 * @param x1  end
+	 */
 	public void FunctionGraph(double x0 ,double x1)
 	{
 		LinePlotTest frame = new LinePlotTest(this, x0, x1);

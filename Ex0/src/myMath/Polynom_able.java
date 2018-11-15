@@ -30,6 +30,7 @@ import java.util.Iterator;
  * 
  * 
  * @author Netanel
+ * @author Carmel
  *
  */
 public interface Polynom_able extends cont_function{

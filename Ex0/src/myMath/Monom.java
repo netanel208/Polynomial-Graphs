@@ -5,13 +5,19 @@ package myMath;
  * see: https://en.wikipedia.org/wiki/Monomial 
  * The class implements function and support simple operations as: construction, value at x, derivative, add and multiply. 
  * @author Netanel
+ * @author Carmel
  *
  */
 public class Monom implements function{
 
-
-
-
+/**
+ * This constructor convert string to Monom .
+ * <p>
+ * Valid Monom should be consist of ax^b :
+ * a is real number and b is non negative integer .
+ * 
+ * @param str
+ */
 	public Monom(String str){
 
 		double a=0; // coefficient
@@ -109,7 +115,7 @@ public class Monom implements function{
 			}
 			else {
 				System.err.println("Invalid input");
-				throw new NumberFormatException();
+				throw new NumberFormatException();   // if the monom is invalid or not meet the requirements
 			}
 		}
 
@@ -260,6 +266,9 @@ public class Monom implements function{
 		}
 	}
 
+	/**
+	 * 
+	 */
 	public String toString() {
 		return this._coefficient+"x^"+this._power;
 	}

@@ -4,6 +4,7 @@ import java.util.Comparator;
 /**
  * this class represente a Comperator 
  * @author Netanel
+ * @author Carmel
  *
  */
 public class Monom_Comperator implements Comparator<Monom> {

@@ -5,9 +5,10 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 /**
- * 
- * @author 
- *
+ * JUnit Test class
+ *  
+ * @author Netanel
+ * @author Carmel
  */
 class JTest {
 
